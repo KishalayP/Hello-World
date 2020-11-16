@@ -27,9 +27,8 @@ class NWCM:
         tm1=[]
         row=int(input("Enter the Number of Sources: "))
         column=int(input("Enter the Number of Destinations: "))
-        #for i in range(row):
-           # np.insert(tm,i-1,[int(x) for x in input("Enter Cost Data: ").split(maxsplit=column)])
-        for i in range(row):          # A for loop for row entries 
+        
+        for i in range(row):          
             a =[]       
             a=[int(x) for x in input("Enter Cost Matrix Row-Wise: ").split(maxsplit=column)]
             tm1.append(a)
@@ -62,8 +61,7 @@ class NWCM:
                 i=i_in
                 d[j]=s
                 cost=fact*ele
- 
-
+            
             total_cost= cost + total_cost
             print("({}x{})".format(ele,fact)," ",sep='+')
         print(end='=')
