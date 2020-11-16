@@ -1,8 +1,10 @@
 import numpy as np
 class NWCM:
+
     def __init__(self):
         #lol
         pass
+    
     def right(s,d,j):
     
             s=int(s)
